@@ -33,9 +33,22 @@ The simulator is designed to explore core system-level concepts such as:
 - Signals completion using interrupts
 
 ### DMA Engine
-- Performs bulk data transfers
-- Operates independently of CPU
-- Transfer latency: **2 cycles (assumed)**
+
+- Performs bulk data transfers  
+- Operates independently of the CPU  
+- Transfer latency: **2 cycles (assumed)**  
+
+#### Working
+
+- Load `register[0]` with the control type:
+  - `1` → Memory-to-device transfer  
+  - `2` → Device-to-memory transfer  
+
+- Load the data length into `register[1]`.
+
+- The data length is copied to the DMA data length register.
+
+- The control type is copied to the DMA control register.
 
 ### Event Queue
 - Drives simulation cycle-by-cycle
