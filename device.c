@@ -28,9 +28,3 @@ void raise_device_interrupt()
     printf("Raising device interrupt\n");
     raise_interrupt(1); // Raise an interrupt with value 1 to indicate device operation completion
 }
-void print_device_memory(){
-    for (int i = 0; i < 10; i++)
-    {
-        printf("Device memory[%d] = %d\n", i, dev_memory[i]);
-    }
-}

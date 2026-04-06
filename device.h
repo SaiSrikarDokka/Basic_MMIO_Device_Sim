@@ -8,8 +8,6 @@ extern int dev_data_in;
 extern int dev_memory[10];
 void dev_write();
 void dev_read();
-void dev_handler();
-void print_device_memory();
 void dev_op();
 void raise_device_interrupt();
 #endif

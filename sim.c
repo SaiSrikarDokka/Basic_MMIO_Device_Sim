@@ -47,7 +47,6 @@ int main()
     {
         printf("Device memory[%d] = %d\n", i, dev_memory[i]);
     }
-    // print_device_memory();
 
     return 0;
 }
