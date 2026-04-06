@@ -46,7 +46,7 @@ The simulator is designed to explore core system-level concepts such as:
 
 - Load the data length into `register[1]`.
 
-- - The data length and control type are copied to their respective DMA registers when the transfer starts.
+- The data length and control type are copied to their respective DMA registers when the transfer starts.
 
 ### Event Queue
 - Drives simulation cycle-by-cycle
