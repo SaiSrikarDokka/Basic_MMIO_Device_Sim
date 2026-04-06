@@ -1,0 +1,311 @@
+Loaded 18 instructions into the instruction queue.
+Scheduling event at time 0
+[Time 0] 
+Fetching instruction at PC: 1
+Store operand 2 to 1
+Scheduling event at time 1
+CPU is Scheduled to run next instruction at 2 cycle
+Scheduling event at time 2
+
+ ---------------------------------- 
+
+[Time 1] 
+MMU write Memory: Address 1, Data 2
+Writing 2 to memory address 1
+
+ ---------------------------------- 
+
+[Time 2] 
+Fetching instruction at PC: 2
+Store operand 3 to 2
+Scheduling event at time 3
+CPU is Scheduled to run next instruction at 4 cycle
+Scheduling event at time 4
+
+ ---------------------------------- 
+
+[Time 3] 
+MMU write Memory: Address 2, Data 3
+Writing 3 to memory address 2
+
+ ---------------------------------- 
+
+[Time 4] 
+Fetching instruction at PC: 3
+Store operand 4 to 3
+Scheduling event at time 5
+CPU is Scheduled to run next instruction at 6 cycle
+Scheduling event at time 6
+
+ ---------------------------------- 
+
+[Time 5] 
+MMU write Memory: Address 3, Data 4
+Writing 4 to memory address 3
+
+ ---------------------------------- 
+
+[Time 6] 
+Fetching instruction at PC: 4
+Store operand 5 to 4
+Scheduling event at time 7
+CPU is Scheduled to run next instruction at 8 cycle
+Scheduling event at time 8
+
+ ---------------------------------- 
+
+[Time 7] 
+MMU write Memory: Address 4, Data 5
+Writing 5 to memory address 4
+
+ ---------------------------------- 
+
+[Time 8] 
+Fetching instruction at PC: 5
+Load value 1 to register 0
+CPU is Scheduled to run next instruction at 9 cycle
+Scheduling event at time 9
+
+ ---------------------------------- 
+
+[Time 9] 
+Fetching instruction at PC: 6
+Load value 5 to register 1
+CPU is Scheduled to run next instruction at 10 cycle
+Scheduling event at time 10
+
+ ---------------------------------- 
+
+[Time 10] 
+Fetching instruction at PC: 7
+Scheduling event at time 11
+CPU is Scheduled to run next instruction at 12 cycle
+Scheduling event at time 12
+
+ ---------------------------------- 
+
+[Time 11] 
+DMA Read: Memory to Device
+Reading 0 from memory address 0
+Device write operation: 0 with 0
+Reading 2 from memory address 1
+Device write operation: 1 with 2
+Reading 3 from memory address 2
+Device write operation: 2 with 3
+Reading 4 from memory address 3
+Device write operation: 3 with 4
+Reading 5 from memory address 4
+Device write operation: 4 with 5
+Scheduling event at time 13
+
+ ---------------------------------- 
+
+[Time 12] 
+Fetching instruction at PC: 8
+Load value 1 to register 3
+CPU is Scheduled to run next instruction at 13 cycle
+Warning: Writing to next cycle as only one event per cycle is supported. Overwriting existing event to time 14
+Scheduling event at time 14
+
+ ---------------------------------- 
+
+[Time 13] 
+Raising DMA interrupt
+
+ ---------------------------------- 
+
+[Time 14] 
+Fetching instruction at PC: 9
+Branch condition is true 
+Interrupt detected! Switching to interrupt mode.
+CPU is Scheduled to run next instruction at 15 cycle
+Scheduling event at time 15
+
+ ---------------------------------- 
+
+[Time 15] 
+Handling interrupt with value: 2
+DMA transfer completed, performing necessary operations.
+CPU is Scheduled to run next instruction at 16 cycle
+Scheduling event at time 16
+
+ ---------------------------------- 
+
+[Time 16] 
+Fetching instruction at PC: 9
+Branch condition falseCPU is Scheduled to run next instruction at 17 cycle
+Scheduling event at time 17
+
+ ---------------------------------- 
+
+[Time 17] 
+Fetching instruction at PC: 10
+Performing device operation with operand 0
+Scheduling event at time 18
+CPU is Scheduled to run next instruction at 19 cycle
+Scheduling event at time 19
+
+ ---------------------------------- 
+
+[Time 18] 
+Scheduling event at time 23
+
+ ---------------------------------- 
+
+[Time 19] 
+Fetching instruction at PC: 11
+Load value 1 to register 3
+CPU is Scheduled to run next instruction at 20 cycle
+Scheduling event at time 20
+
+ ---------------------------------- 
+
+[Time 20] 
+Fetching instruction at PC: 12
+Branch condition is true 
+CPU is Scheduled to run next instruction at 21 cycle
+Scheduling event at time 21
+
+ ---------------------------------- 
+
+[Time 21] 
+Fetching instruction at PC: 12
+Branch condition is true 
+CPU is Scheduled to run next instruction at 22 cycle
+Scheduling event at time 22
+
+ ---------------------------------- 
+
+[Time 22] 
+Fetching instruction at PC: 12
+Branch condition is true 
+CPU is Scheduled to run next instruction at 23 cycle
+Warning: Writing to next cycle as only one event per cycle is supported. Overwriting existing event to time 24
+Scheduling event at time 24
+
+ ---------------------------------- 
+
+[Time 23] 
+Raising device interrupt
+
+ ---------------------------------- 
+
+[Time 24] 
+Fetching instruction at PC: 12
+Branch condition is true 
+Interrupt detected! Switching to interrupt mode.
+CPU is Scheduled to run next instruction at 25 cycle
+Scheduling event at time 25
+
+ ---------------------------------- 
+
+[Time 25] 
+Handling interrupt with value: 1
+Device wait completed, performing necessary operations.
+CPU is Scheduled to run next instruction at 26 cycle
+Scheduling event at time 26
+
+ ---------------------------------- 
+
+[Time 26] 
+Fetching instruction at PC: 12
+Branch condition falseCPU is Scheduled to run next instruction at 27 cycle
+Scheduling event at time 27
+
+ ---------------------------------- 
+
+[Time 27] 
+Fetching instruction at PC: 13
+Load value 2 to register 0
+CPU is Scheduled to run next instruction at 28 cycle
+Scheduling event at time 28
+
+ ---------------------------------- 
+
+[Time 28] 
+Fetching instruction at PC: 14
+Load value 5 to register 1
+CPU is Scheduled to run next instruction at 29 cycle
+Scheduling event at time 29
+
+ ---------------------------------- 
+
+[Time 29] 
+Fetching instruction at PC: 15
+Scheduling event at time 30
+CPU is Scheduled to run next instruction at 31 cycle
+Scheduling event at time 31
+
+ ---------------------------------- 
+
+[Time 30] 
+DMA Transfer: Device to Memory
+Writing 0 to memory address 5
+Writing 24 to memory address 6
+Writing 36 to memory address 7
+Writing 48 to memory address 8
+Writing 60 to memory address 9
+Scheduling event at time 32
+
+ ---------------------------------- 
+
+[Time 31] 
+Fetching instruction at PC: 16
+Load value 1 to register 3
+CPU is Scheduled to run next instruction at 32 cycle
+Warning: Writing to next cycle as only one event per cycle is supported. Overwriting existing event to time 33
+Scheduling event at time 33
+
+ ---------------------------------- 
+
+[Time 32] 
+Raising DMA interrupt
+
+ ---------------------------------- 
+
+[Time 33] 
+Fetching instruction at PC: 17
+Branch condition is true 
+Interrupt detected! Switching to interrupt mode.
+CPU is Scheduled to run next instruction at 34 cycle
+Scheduling event at time 34
+
+ ---------------------------------- 
+
+[Time 34] 
+Handling interrupt with value: 2
+DMA transfer completed, performing necessary operations.
+CPU is Scheduled to run next instruction at 35 cycle
+Scheduling event at time 35
+
+ ---------------------------------- 
+
+[Time 35] 
+Fetching instruction at PC: 17
+Branch condition false
+ ---------------------------------- 
+
+Maximum instructions executed. Halting simulation.
+Memory State at the end of simulation:
+Memory[0] = 0
+Memory[1] = 2
+Memory[2] = 3
+Memory[3] = 4
+Memory[4] = 5
+Memory[5] = 0
+Memory[6] = 24
+Memory[7] = 36
+Memory[8] = 48
+Memory[9] = 60
+
+Device Memory State at the end of simulation:
+Device memory[0] = 0
+Device memory[1] = 24
+Device memory[2] = 36
+Device memory[3] = 48
+Device memory[4] = 60
+Device memory[5] = 0
+Device memory[6] = 0
+Device memory[7] = 0
+Device memory[8] = 0
+Device memory[9] = 0
